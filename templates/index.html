@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Security Toolkit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🔐 Cyber Security Dashboard</h1>
+
+    <div class="grid">
+
+        <!-- Vulnerability -->
+        <div class="card">
+            <h2>Vulnerability Scan</h2>
+            <form method="POST" action="/scan">
+                <input type="text" name="url" placeholder="https://example.com" required>
+                <button>Scan</button>
+            </form>
+        </div>
+
+        <!-- Port -->
+        <div class="card">
+            <h2>Port Scanner</h2>
+            <form method="POST" action="/portscan">
+                <input type="text" name="target" placeholder="example.com" required>
+                <button>Scan</button>
+            </form>
+        </div>
+
+        <!-- Link -->
+        <div class="card">
+            <h2>Link Crawler</h2>
+            <form method="POST" action="/crawl">
+                <input type="text" name="url" required>
+                <button>Crawl</button>
+            </form>
+        </div>
+
+        <!-- Directory -->
+        <div class="card">
+            <h2>Directory Scanner</h2>
+            <form method="POST" action="/dirscan">
+                <input type="text" name="url" required>
+                <button>Scan</button>
+            </form>
+        </div>
+
+        <!-- Network -->
+        <div class="card">
+            <h2>Network Info</h2>
+            <form method="GET" action="/netinfo">
+                <button>Get Info</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- RESULTS -->
+    <div class="results">
+
+        {% if result %}
+        <h3>Vulnerabilities</h3>
+        <ul>{% for r in result %}<li>{{ r }}</li>{% endfor %}</ul>
+        {% endif %}
+
+        {% if ports %}
+        <h3>Open Ports</h3>
+        <ul>{% for p in ports %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% endif %}
+
+        {% if links %}
+        <h3>Links</h3>
+        <ul>{% for link in links %}<li>{{ link }}</li>{% endfor %}</ul>
+        {% endif %}
+
+        {% if dirs %}
+        <h3>Directories</h3>
+        <ul>{% for d in dirs %}<li>{{ d }}</li>{% endfor %}</ul>
+        {% endif %}
+
+        {% if net %}
+        <h3>Network Info</h3>
+        <p>Hostname: {{ net.hostname }}</p>
+        <p>IP: {{ net.ip }}</p>
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
