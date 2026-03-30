@@ -1,7 +1,6 @@
 
 # 🔐 Ganesh Cyber Shield
 
-## 📸 Screenshot
 <img width="1913" height="701" alt="Screenshot 2026-03-30 152219" src="https://github.com/user-attachments/assets/da9fd998-d8e8-4874-91c2-fd5497e365b8" />
 
 
