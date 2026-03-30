@@ -145,5 +145,3 @@ Cybersecurity Enthusiast
 
 This project reflects my hands-on experience in cybersecurity and web development, showcasing my ability to design, develop, and deploy real-world applications.
 
-
-I’ll make you **job-ready 💯🔥**
