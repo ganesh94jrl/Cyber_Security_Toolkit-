@@ -146,31 +146,7 @@ Cybersecurity Enthusiast
 This project reflects my hands-on experience in cybersecurity and web development, showcasing my ability to design, develop, and deploy real-world applications.
 
 
----
 
-# 🔥 EXTRA BOOST (OPTIONAL BUT VERY POWERFUL)
-
-Add this at top of GitHub:
-
-### 🖼️ Screenshot section
-
-Take screenshot of your UI and add:
-
-```markdown
-## 📸 Screenshot
-![Dashboard](your-image-link)
-```
-
----
-
-# 🚀 FINAL STEP
-
-👉 Go to GitHub
-👉 Open your repo
-👉 Click **README.md**
-👉 Paste this
-
----
 
 # 🎯 NEXT LEVEL (HIGH IMPACT)
 
